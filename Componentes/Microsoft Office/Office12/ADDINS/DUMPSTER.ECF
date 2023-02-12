@@ -1,0 +1,35 @@
+[General]
+Display Name=<DisplayName>
+Description=<Description>
+GUID={f86ed290-3a4a-11cf-b57e-524153480010}
+Path="dumpster.dll"
+Entry Point=1
+Client Version=4.0
+Extension Version=1.0
+Service Provider=MSEMS
+Misc Flags=WarnIfNoDLL;DllFromDarwin
+
+[Exchange Client Compatibility]
+Exchange Registry=0
+Exchange Extension Key="Deleted Message Recovery"
+; Context is Viewer
+Exchange Context Map=01000000000000
+; Interfaces are Commands, UserEvents
+Exchange Interface Map=1100000
+
+
+[Folder]
+Events=OnExtCommand
+Commands=DMR
+Outlook Commands=RecoverDeleted
+Extension Outlook Commands=50001
+
+
+[Command]
+DMR=50001;@11025;Tools Suppress
+
+[Strings]
+DisplayName=Recuperação de itens excluídos
+Description=Permite a recuperação de itens previamente excluídos
+; STR 11025 - DMRText=Re&cover Deleted Items...
+

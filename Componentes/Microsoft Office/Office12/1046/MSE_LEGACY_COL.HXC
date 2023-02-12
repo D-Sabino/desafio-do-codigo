@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<HelpCollection DTDVersion="1.0" LangId="1046" Title="MS.MSE_LEGACY.12.1046">	
+	<TOCDef File="MSE_LEGACY_COL.HxT" Id="HelpCol_TOC_MSE_LEGACY_1046"/>	
+	<KeywordIndexDef File="MSE_LEGACY_F_COL.HxK"/>
+	<KeywordIndexDef File="MSE_LEGACY_K_COL.HxK"/>	
+	<KeywordIndexDef File="MSE_LEGACY_A_COL.HxK"/>
+	<ItemMoniker Name="!DefaultAssociativeIndex" ProgId="HxDs.HxIndex" InitData="A"/>
+	<ItemMoniker Name="!DefaultTOC" ProgId="HxDs.HxHierarchy" InitData="MSE_LEGACY"/>
+	<ItemMoniker Name="!DefaultFullTextSearch" ProgId="HxDs.HxFullTextSearch" InitData=";!DefaultContextWindowIndex"/>
+	<ItemMoniker Name="!DefaultKeywordIndex" ProgId="HxDs.HxIndex" InitData="K"/>
+	<ItemMoniker Name="!DefaultContextWindowIndex" ProgId="HxDs.HxIndex" InitData="F"/>	
+</HelpCollection>

@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:od="urn:schemas-microsoft-com:officedata">
+	<xsd:element name="dataroot">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Projects" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+			<xsd:attribute name="generated" type="xsd:dateTime"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Projects" od:rename="Projetos">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<od:index index-name="ID" index-key="ID " primary="no" unique="no" clustered="no" order="asc"/>
+				<od:index index-name="PrimaryKey" index-key="ID " primary="yes" unique="yes" clustered="no" order="asc"/>
+				<od:index index-name="Project Name" index-key="Project_x0020_Name " primary="no" unique="no" clustered="no" order="asc"/>
+				<od:tableProperty name="Orientation" type="2" value="0"/>
+				<od:tableProperty name="SubdatasheetName" type="10" value="[Auto]"/>
+				<od:tableProperty name="SubdatasheetHeight" type="3" value="0"/>
+				<od:tableProperty name="SubdatasheetExpanded" type="1" value="0"/>
+				<od:tableProperty name="TotalsRow" type="1" value="0"/>
+				<od:tableProperty name="FilterOnLoad" type="1" value="0"/>
+				<od:tableProperty name="OrderByOnLoad" type="1" value="0"/>
+				<od:tableProperty name="WSSTemplateID" type="3" value="120"/>
+				<od:tableProperty name="OrderByOn" type="1" value="0"/>
+				<od:tableProperty name="DefaultView" type="2" value="2"/>
+				<od:tableProperty name="DisplayViewsOnSharePointSite" type="2" value="1"/>
+				<od:tableProperty name="StarColumnHidden" type="1" value="0"/>
+				<od:tableProperty name="NameMap" type="11" value="CswOVQAAAACGmJkAVU8KRrab26YTwAlBAAAAAG2oGAfrB+NA6LkTAA4AAABQAHIA
+bwBqAGUAYwB0AHMAAAAAAAAAPE4EVuRVq0S6ckeJDYtj2QcAAACGmJkAVU8KRrab
+26YTwAlBSQBEAAAAAAAAAC3HrE3eOUBPpbsrW5pDzYUHAAAAhpiZAFVPCka2m9um
+E8AJQVAAcgBvAGoAZQBjAHQAIABOAGEAbQBlAAAAAAAAAEB05dywt9dHizsuivtY
+wQMHAAAAhpiZAFVPCka2m9umE8AJQUMAYQB0AGUAZwBvAHIAeQAAAAAAAABJA8sd
+/6bzTIsqUfpqffUUBwAAAIaYmQBVTwpGtpvbphPACUFQAHIAaQBvAHIAaQB0AHkA
+AAAAAAAAbczXk16BM0ifS8F5ku2I5AcAAACGmJkAVU8KRrab26YTwAlBUwB0AGEA
+dAB1AHMAAAAAAAAA479Y6D1CxUCx0M95zH4nsQcAAACGmJkAVU8KRrab26YTwAlB
+QgBlAGcAaQBuACAARABhAHQAZQAAAAAAAACAUKF+K8+KTIl41XmVCv+vBwAAAIaY
+mQBVTwpGtpvbphPACUFFAG4AZAAgAEQAYQB0AGUAAAAAAAAAjEH1INaQG0me/Yot
+L9gbgwcAAACGmJkAVU8KRrab26YTwAlBQgB1AGQAZwBlAHQAIABpAG4AIABEAGEA
+eQBzAAAAAAAAAPnhAZ8QbTFJlUBrzuRHAK8HAAAAhpiZAFVPCka2m9umE8AJQUIA
+dQBkAGcAZQB0AAAAAAAAAKmxT3LwNT1LrBTZMMvfqAQHAAAAhpiZAFVPCka2m9um
+E8AJQU4AbwB0AGUAcwAAAAAAAADJEC9XBwRrRqHLZtcAeDGjBwAAAIaYmQBVTwpG
+tpvbphPACUFBAHQAdABhAGMAaABtAGUAbgB0AHMAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAwAAAAEAAAAAAAAAAAAAAAAAAAAAAA=
+"/>
+				<od:tableProperty name="HideNewField" type="1" value="0"/>
+				<od:tableProperty name="GUID" type="9" value="hpiZAFVPCka2m9umE8AJQQ==
+"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="ID" minOccurs="1" od:jetType="autonumber" od:sqlSType="int" od:autoUnique="yes" od:nonNullable="yes" type="xsd:int" od:rename="ID">
+					<xsd:annotation>
+						<xsd:appinfo>
+							<od:fieldProperty name="OrdinalPosition" type="3" value="0"/>
+							<od:fieldProperty name="Required" type="1" value="0"/>
+							<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+							<od:fieldProperty name="WSSFieldID" type="10" value="ID"/>
+							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+							<od:fieldProperty name="RowSourceType" type="10" value="Table/Query"/>
+							<od:fieldProperty name="BoundColumn" type="3" value="1"/>
+							<od:fieldProperty name="ColumnCount" type="3" value="1"/>
+							<od:fieldProperty name="ColumnHeads" type="1" value="0"/>
+							<od:fieldProperty name="AllowValueListEdits" type="1" value="0"/>
+							<od:fieldProperty name="TextAlign" type="2" value="0"/>
+							<od:fieldProperty name="ShowOnlyRowSourceValues" type="1" value="0"/>
+							<od:fieldProperty name="GUID" type="9" value="PE4EVuRVq0S6ckeJDYtj2Q==
+"/>
+						</xsd:appinfo>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Project_x0020_Name" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar" od:rename="Nome do Projeto">
+					<xsd:annotation>
+						<xsd:appinfo>
+							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+							<od:fieldProperty name="Required" type="1" value="0"/>
+							<od:fieldProperty name="AllowZeroLength" type="1" value="0"/>
+							<od:fieldProperty name="DisplayControl" type="3" value="109"/>
+							<od:fieldProperty name="RowSourceType" type="10" value="Table/Query"/>
+							<od:fieldProperty name="BoundColumn" type="3" value="1"/>
+							<od:fieldProperty name="ColumnCount" type="3" value="1"/>
+							<od:fieldProperty name="ColumnHeads" type="1" value="0"/>
+							<od:fieldProperty name="IMEMode" type="2" value="0"/>
+							<od:fieldProperty name="IMESentenceMode" type="2" value="0"/>
+							<od:fieldProperty name="UnicodeCompression" type="1" value="0"/>
+							<od:fieldProperty name="AllowMultipleValues" type="1" value="0"/>
+							<od:fieldProperty name="TextAlign" type="2" value="0"/>
+							<od:fieldProperty name="AllowValueListEdits" type="1" value="0"/>
+							<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+							<od:fieldProperty name="ShowOnlyRowSourceValues" type="1" value="0"/>
+							<od:fieldProperty name="WSSFieldID" type="10" value="Title"/>
+							<od:fieldProperty name="GUID" type="9" value="LcesTd45QE+luytbmkPNhQ==
+"/>
+						</xsd:appinfo>
+					</xsd:annotation>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:maxLength value="150"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+				<xsd:element name="Category" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar" od:rename="Categoria">
+					<xsd:annotation>
+						<xsd:appinfo>
+							<od:fieldProperty name="Required" type="1" value="0"/>
+							<od:fieldProperty name="OrdinalPosition" type="3" value="3"/>
+							<od:fieldProperty name="AllowZeroLength" type="1" value="0"/>
+							<od:fieldProperty name="DisplayControl" type="3" value="111"/>
+							<od:fieldProperty name="RowSourceType" type="10" value="Value List"/>
+							<od:fieldProperty name="RowSource" type="12" value="&quot;(1) Categoria&quot;;&quot;(2) Categoria&quot;;&quot;(3) Categoria&quot;"/>
+							<od:fieldProperty name="BoundColumn" type="3" value="1"/>
+							<od:fieldProperty name="ColumnCount" type="3" value="1"/>
+							<od:fieldProperty name="ColumnHeads" type="1" value="0"/>
+							<od:fieldProperty name="ColumnWidths" type="10" value="1440"/>
+							<od:fieldProperty name="ListRows" type="3" value="16"/>
+							<od:fieldProperty name="ListWidth" type="10" value="1440twip"/>
+							<od:fieldProperty name="LimitToList" type="1" value="1"/>
+							<od:fieldProperty name="IMEMode" type="2" value="0"/>
+							<od:fieldProperty name="IMESentenceMode" type="2" value="0"/>
+							<od:fieldProperty name="UnicodeCompression" type="1" value="1"/>
+							<od:fieldProperty name="AllowMultipleValues" type="1" value="0"/>
+							<od:fieldProperty name="AllowValueListEdits" type="1" value="1"/>
+							<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+							<od:fieldProperty name="DefaultValue" type="12" value="&quot;(1) Categoria&quot;"/>
+							<od:fieldProperty name="TextAlign" type="2" value="0"/>
+							<od:fieldProperty name="ShowOnlyRowSourceValues" type="1" value="0"/>
+							<od:fieldProperty name="GUID" type="9" value="QHTl3LC310eLOy6K+1jBAw==
+"/>
+						</xsd:appinfo>
+					</xsd:annotation>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:maxLength value="50"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+				<xsd:element name="Priority" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar" od:rename="Prioridade">
+					<xsd:annotation>
+						<xsd:appinfo>
+							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+							<od:fieldProperty name="DefaultValue" type="12" value="&quot;(2) Normal&quot;"/>
+							<od:fieldProperty name="Required" type="1" value="0"/>
+							<od:fieldProperty name="AllowZeroLength" type="1" value="0"/>
+							<od:fieldProperty name="DisplayControl" type="3" value="111"/>
+							<od:fieldProperty name="RowSourceType" type="10" value="Value List"/>
+							<od:fieldProperty name="RowSource" type="12" value="&quot;(1) Alta&quot;;&quot;(2) Normal&quot;;&quot;(3) Baixa&quot;"/>
+							<od:fieldProperty name="BoundColumn" type="3" value="1"/>
+							<od:fieldProperty name="ColumnCount" type="3" value="1"/>
+							<od:fieldProperty name="ColumnHeads" type="1" value="0"/>
+							<od:fieldProperty name="ColumnWidths" type="10" value="1440"/>
+							<od:fieldProperty name="ListRows" type="3" value="16"/>
+							<od:fieldProperty name="ListWidth" type="10" value="1440twip"/>
+							<od:fieldProperty name="LimitToList" type="1" value="1"/>
+							<od:fieldProperty name="IMEMode" type="2" value="0"/>
+							<od:fieldProperty name="IMESentenceMode" type="2" value="0"/>
+							<od:fieldProperty name="UnicodeCompression" type="1" value="1"/>
+							<od:fieldProperty name="AllowMultipleValues" type="1" value="0"/>
+							<od:fieldProperty name="TextAlign" type="2" value="0"/>
+							<od:fieldProperty name="AllowValueListEdits" type="1" value="1"/>
+							<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+							<od:fieldProperty name="ShowOnlyRowSourceValues" type="1" value="0"/>
+							<od:fieldProperty name="GUID" type="9" value="SQPLHf+m80yLKlH6an31FA==
+"/>
+						</xsd:appinfo>
+					</xsd:annotation>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:maxLength value="50"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+				<xsd:element name="Status" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar" od:rename="Status">
+					<xsd:annotation>
+						<xsd:appinfo>
+							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+							<od:fieldProperty name="DefaultValue" type="12" value="&quot;Não Iniciada&quot;"/>
+							<od:fieldProperty name="Required" type="1" value="0"/>
+							<od:fieldProperty name="AllowZeroLength" type="1" value="0"/>
+							<od:fieldProperty name="DisplayControl" type="3" value="111"/>
+							<od:fieldProperty name="RowSourceType" type="10" value="Value List"/>
+							<od:fieldProperty name="RowSource" type="12" value="&quot;Não Iniciada&quot;;&quot;Em Andamento&quot;;&quot;Concluída&quot;;&quot;Adiada&quot;;&quot;Aguardando outra pessoa&quot;"/>
+							<od:fieldProperty name="BoundColumn" type="3" value="1"/>
+							<od:fieldProperty name="ColumnCount" type="3" value="1"/>
+							<od:fieldProperty name="ColumnHeads" type="1" value="0"/>
+							<od:fieldProperty name="ColumnWidths" type="10" value="1440"/>
+							<od:fieldProperty name="ListRows" type="3" value="16"/>
+							<od:fieldProperty name="ListWidth" type="10" value="1440twip"/>
+							<od:fieldProperty name="LimitToList" type="1" value="1"/>
+							<od:fieldProperty name="IMEMode" type="2" value="0"/>
+							<od:fieldProperty name="IMESentenceMode" type="2" value="0"/>
+							<od:fieldProperty name="UnicodeCompression" type="1" value="1"/>
+							<od:fieldProperty name="AllowMultipleValues" type="1" value="0"/>
+							<od:fieldProperty name="TextAlign" type="2" value="0"/>
+							<od:fieldProperty name="AllowValueListEdits" type="1" value="0"/>
+							<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+							<od:fieldProperty name="ShowOnlyRowSourceValues" type="1" value="0"/>
+							<od:fieldProperty name="GUID" type="9" value="bczXk16BM0ifS8F5ku2I5A==
+"/>
+						</xsd:appinfo>
+					</xsd:annotation>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:maxLength value="50"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+				<xsd:element name="Begin_x0020_Date" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime" od:rename="Data de Início">
+					<xsd:annotation>
+						<xsd:appinfo>
+							<od:fieldProperty name="Required" type="1" value="0"/>
+							<od:fieldProperty name="OrdinalPosition" type="3" value="6"/>
+							<od:fieldProperty name="ValidationRule" type="12" value="&gt;=#1/1/1900#"/>
+							<od:fieldProperty name="ValidationText" type="10" value="O valor deve ser posterior a 1/1/1900."/>
+							<od:fieldProperty name="IMEMode" type="2" value="2"/>
+							<od:fieldProperty name="IMESentenceMode" type="2" value="3"/>
+							<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+							<od:fieldProperty name="ShowDatePicker" type="3" value="1"/>
+							<od:fieldProperty name="RowSourceType" type="10" value="Table/Query"/>
+							<od:fieldProperty name="BoundColumn" type="3" value="1"/>
+							<od:fieldProperty name="ColumnCount" type="3" value="1"/>
+							<od:fieldProperty name="ColumnHeads" type="1" value="0"/>
+							<od:fieldProperty name="AllowValueListEdits" type="1" value="0"/>
+							<od:fieldProperty name="TextAlign" type="2" value="0"/>
+							<od:fieldProperty name="ShowOnlyRowSourceValues" type="1" value="0"/>
+							<od:fieldProperty name="DefaultValue" type="12" value="Now()"/>
+							<od:fieldProperty name="Format" type="10" value="Short Date"/>
+							<od:fieldProperty name="GUID" type="9" value="479Y6D1CxUCx0M95zH4nsQ==
+"/>
+						</xsd:appinfo>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="End_x0020_Date" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime" od:rename="Data de Término">
+					<xsd:annotation>
+						<xsd:appinfo>
+							<od:fieldProperty name="Required" type="1" value="0"/>
+							<od:fieldProperty name="OrdinalPosition" type="3" value="7"/>
+							<od:fieldProperty name="ValidationRule" type="12" value="&gt;=#1/1/1900#"/>
+							<od:fieldProperty name="ValidationText" type="10" value="O valor deve ser posterior a 1/1/1900."/>
+							<od:fieldProperty name="IMEMode" type="2" value="2"/>
+							<od:fieldProperty name="IMESentenceMode" type="2" value="3"/>
+							<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+							<od:fieldProperty name="ShowDatePicker" type="3" value="1"/>
+							<od:fieldProperty name="RowSourceType" type="10" value="Table/Query"/>
+							<od:fieldProperty name="BoundColumn" type="3" value="1"/>
+							<od:fieldProperty name="ColumnCount" type="3" value="1"/>
+							<od:fieldProperty name="ColumnHeads" type="1" value="0"/>
+							<od:fieldProperty name="AllowValueListEdits" type="1" value="0"/>
+							<od:fieldProperty name="TextAlign" type="2" value="0"/>
+							<od:fieldProperty name="ShowOnlyRowSourceValues" type="1" value="0"/>
+							<od:fieldProperty name="Format" type="10" value="Short Date"/>
+							<od:fieldProperty name="GUID" type="9" value="gFChfivPikyJeNV5lQr/rw==
+"/>
+						</xsd:appinfo>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Budget_x0020_in_x0020_Days" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double" od:rename="Orçamento em Dias">
+					<xsd:annotation>
+						<xsd:appinfo>
+							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+							<od:fieldProperty name="DecimalPlaces" type="2" value="255"/>
+							<od:fieldProperty name="DefaultValue" type="12" value="0"/>
+							<od:fieldProperty name="Required" type="1" value="0"/>
+							<od:fieldProperty name="DisplayControl" type="3" value="109"/>
+							<od:fieldProperty name="TextAlign" type="2" value="0"/>
+							<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+							<od:fieldProperty name="GUID" type="9" value="jEH1INaQG0me/YotL9gbgw==
+"/>
+						</xsd:appinfo>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Budget" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double" od:rename="Orçamento">
+					<xsd:annotation>
+						<xsd:appinfo>
+							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+							<od:fieldProperty name="Format" type="10" value="Currency"/>
+							<od:fieldProperty name="DecimalPlaces" type="2" value="255"/>
+							<od:fieldProperty name="Required" type="1" value="0"/>
+							<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+							<od:fieldProperty name="RowSourceType" type="10" value="Table/Query"/>
+							<od:fieldProperty name="BoundColumn" type="3" value="1"/>
+							<od:fieldProperty name="ColumnCount" type="3" value="1"/>
+							<od:fieldProperty name="ColumnHeads" type="1" value="0"/>
+							<od:fieldProperty name="AllowValueListEdits" type="1" value="0"/>
+							<od:fieldProperty name="TextAlign" type="2" value="0"/>
+							<od:fieldProperty name="ShowOnlyRowSourceValues" type="1" value="0"/>
+							<od:fieldProperty name="DefaultValue" type="12" value="0"/>
+							<od:fieldProperty name="GUID" type="9" value="+eEBnxBtMUmVQGvO5EcArw==
+"/>
+						</xsd:appinfo>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Notes" minOccurs="0" od:jetType="memo" od:sqlSType="ntext" od:textFormat="1" od:rename="Anotações">
+					<xsd:annotation>
+						<xsd:appinfo>
+							<od:fieldProperty name="TextFormat" type="2" value="1"/>
+							<od:fieldProperty name="Required" type="1" value="0"/>
+							<od:fieldProperty name="OrdinalPosition" type="3" value="9"/>
+							<od:fieldProperty name="AllowZeroLength" type="1" value="0"/>
+							<od:fieldProperty name="IMEMode" type="2" value="0"/>
+							<od:fieldProperty name="IMESentenceMode" type="2" value="0"/>
+							<od:fieldProperty name="UnicodeCompression" type="1" value="1"/>
+							<od:fieldProperty name="AppendOnly" type="1" value="0"/>
+							<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+							<od:fieldProperty name="RowSourceType" type="10" value="Table/Query"/>
+							<od:fieldProperty name="BoundColumn" type="3" value="1"/>
+							<od:fieldProperty name="ColumnCount" type="3" value="1"/>
+							<od:fieldProperty name="ColumnHeads" type="1" value="0"/>
+							<od:fieldProperty name="AllowValueListEdits" type="1" value="0"/>
+							<od:fieldProperty name="TextAlign" type="2" value="0"/>
+							<od:fieldProperty name="ShowOnlyRowSourceValues" type="1" value="0"/>
+							<od:fieldProperty name="GUID" type="9" value="qbFPcvA1PUusFNkwy9+oBA==
+"/>
+						</xsd:appinfo>
+					</xsd:annotation>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:maxLength value="536870910"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+				<xsd:element name="Attachments" minOccurs="0" od:jetType="complex" od:jetComplexType="MSysComplexType_Attachment" maxOccurs="unbounded" od:rename="Anexos">
+					<xsd:annotation>
+						<xsd:appinfo>
+							<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
+							<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+							<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+							<od:fieldProperty name="Required" type="1" value="0"/>
+							<od:fieldProperty name="DisplayControl" type="3" value="126"/>
+							<od:fieldProperty name="TextAlign" type="2" value="0"/>
+							<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+							<od:fieldProperty name="WSSFieldID" type="10" value="Attachments"/>
+							<od:fieldProperty name="RowSourceType" type="10" value="Table/Query"/>
+							<od:fieldProperty name="BoundColumn" type="3" value="1"/>
+							<od:fieldProperty name="ColumnCount" type="3" value="1"/>
+							<od:fieldProperty name="ColumnHeads" type="1" value="0"/>
+							<od:fieldProperty name="AllowValueListEdits" type="1" value="0"/>
+							<od:fieldProperty name="ShowOnlyRowSourceValues" type="1" value="0"/>
+							<od:fieldProperty name="GUID" type="9" value="yRAvVwcEa0ahy2bXAHgxow==
+"/>
+						</xsd:appinfo>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="FileData" minOccurs="0" od:jetType="oleobject" od:sqlSType="image">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:base64Binary">
+										<xsd:maxLength value="1476395008"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="FileFlags" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int"/>
+							<xsd:element name="FileName" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="255"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="FileTimeStamp" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime"/>
+							<xsd:element name="FileType" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="255"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="FileURL" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="536870910"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,75 @@
+:Base mscal.hlp>ref
+:Title Referência do Controle Calendário
+:Index Referência do Controle Calendário=mscal.hlp
+1 Referência do Controle Calendário
+2 Controle Calendário=ccsumCalendarDescription@mscal.hlp>Langref
+2 Referência do Controle ActiveX
+3 Informações sobre Propriedades, Métodos e Eventos de um Controle ActiveX=acccUsingCustomControlLanguageElements@acvba80.hlp>Langref
+3 Elementos de Linguagem do Microsoft Access que se Aplicam aos Controles ActiveX=acccAccessLanguageElements@acvba80.hlp>Langref
+3 A Caixa de Diálogo de Propriedades Personalizadas do Controle ActiveX=acccViewCustomControlProperties@acvba80.hlp>Langref
+3 Visualizar a Caixa Sobre de um Controle ActiveX=acccViewCustomControlAboutBox@acvba80.hlp>Langref
+2 Exemplos
+3 A-P
+4 Propriedades DayFont=ccproDayFontX@mscal.hlp>Langref
+4 Método Refresh e da Propriedade FirstDay=ccmthRefreshX@mscal.hlp>Langref
+4 Propriedades GridFont=ccproDayFontX@mscal.hlp>Langref
+4 Método NextDay=ccmthNextDayX@mscal.hlp>Langref
+4 Método NextMonth=ccmthNextMonthX@mscal.hlp>Langref
+4 Método NextWeek=ccmthNextWeekX@mscal.hlp>Langref
+4 Método NextYear=ccmthNextYearX@mscal.hlp>Langref
+4 Método PreviousDay=ccmthPreviousDayX@mscal.hlp>Langref
+4 Método PreviousMonth=ccmthPreviousMonthX@mscal.hlp>Langref
+4 Método PreviousWeek=ccmthPreviousWeekX@mscal.hlp>Langref
+4 Método PreviousYear=ccmthPreviousYearX@mscal.hlp>Langref
+3 Q-Z
+4 Método Refresh=ccmthRefreshX@mscal.hlp>Langref
+2 Eventos
+3 A-P
+4 AfterUpdate (Controle Calendário)=ccevtAfterUpdate@mscal.hlp>Langref
+4 BeforeUpdate (Controle Calendário)=ccevtBeforeUpdate@mscal.hlp>Langref
+4 Click (Controle Calendário)=ccevtClick@mscal.hlp>Langref
+4 DblClick (Controle Calendário)=ccevtDblClick@mscal.hlp>Langref
+4 KeyUp (Controle Calendário)=ccevtKeydown@mscal.hlp>Langref
+4 KeyPress (Controle Calendário)=ccevtKeypress@mscal.hlp>Langref
+4 KeyDown (Controle Calendário)=ccevtKeydown@mscal.hlp>Langref
+4 NewMonth=ccevtNewMonth@mscal.hlp>Langref
+4 NewYear=ccevtNewYear@mscal.hlp>Langref
+2 Métodos
+3 A-P
+4 AboutBox=ccmthAboutBox@mscal.hlp>Langref
+4 NextDay=ccmthNextDay@mscal.hlp>Langref
+4 NextMonth=ccmthNextMonth@mscal.hlp>Langref
+4 NextWeek=ccmthNextWeek @mscal.hlp>Langref
+4 NextYear=ccmthNextYear @mscal.hlp>Langref
+4 PreviousDay=ccmthPreviousDay @mscal.hlp>Langref
+4 PreviousMonth=ccmthPreviousMonth@mscal.hlp>Langref
+4 PreviousWeek=ccmthPreviousWeek@mscal.hlp>Langref
+4 PreviousYear=ccmthPreviousYear@mscal.hlp>Langref
+3 Q-Z
+4 Refresh (Controle Calendário)=ccmthRefresh@mscal.hlp>Langref
+4 Today=ccmthToday@mscal.hlp>Langref
+2 Propriedades
+3 A-P
+4 BackColor (Controle Calendário)=ccproBackColor@mscal.hlp>Langref
+4 Day (Dia)=ccproDay@mscal.hlp>Langref
+4 DayFont (FonteDoDia)=ccproDayFont@mscal.hlp>Langref
+4 DayFontColor (CorDaFonteDoDia)=ccproDayFontColor@mscal.hlp>Langref
+4 DayLength (ComprimentoDoDia)=ccproDayLength@mscal.hlp>Langref
+4 FirstDay (PrimeiroDia)=ccproFirstDay@mscal.hlp>Langref
+4 GridCellEffect (AparênciaDaGradeDaCélula)=ccproGridLinesFormat@mscal.hlp>Langref
+4 GridFont (FonteDaGrade)=ccproGridFont@mscal.hlp>Langref
+4 GridFontColor (CorDaFonteDaGrade)=ccproGridFontColor@mscal.hlp>Langref
+4 GridLinesColor (CorDasLinhasDeGrade)=ccproGridLinesColor@mscal.hlp>Langref
+4 Month (Mês)=ccproMonth@mscal.hlp>Langref
+4 MonthLength (ComprimentoDoMês)=ccproMonthLength@mscal.hlp>Langref
+3 Q-Z
+4 ShowDateSelectors (MostrarSeletoresDeData)=ccproShowDateSelectors@mscal.hlp>Langref
+4 ShowDays (MostrarDias)=ccproShowDays@mscal.hlp>Langref
+4 ShowHorizontalGrid (MostrarGradeHorizontal)=ccproShowHorizontalGridlines@mscal.hlp>Langref
+4 ShowTitle (MostrarTítulo)=ccproShowTitle@mscal.hlp>Langref
+4 ShowVerticalGrid (MostrarGradeVertical)=ccproShowVerticalGridlines@mscal.hlp>Langref
+4 TitleFont (FonteDoTítulo)=ccproTitleFont@mscal.hlp>Langref
+4 TitleFontColor (CorDaFonteDoTítulo)=ccproTitleFontColor@mscal.hlp>Langref
+4 Value (Valor) (Controle Calendário)=ccproValue@mscal.hlp>Langref
+4 ValueIsNull (ValorÉNulo) (Controle Calendário)=ccproValueIsNull@mscal.hlp>Langref
+4 Year (Ano)=ccproYear@mscal.hlp>Langref

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<categories>
+  <word>
+    <ct assetid="CT101172311046" name="Pautas" />
+    <ct assetid="CT101043001046" name="Certificados de premiação" />
+    <ct assetid="CT101043031046" name="Folhetos" />
+    <ct assetid="CT101043091046" name="Cartões de visita" />
+    <ct assetid="CT101043131046" name="Calendários" />
+    <ct assetid="CT101172521046" name="Faxes" />
+    <ct assetid="CT101043191046" name="Panfletos" />
+    <ct assetid="CT101043201046" name="Formulários" />
+    <ct assetid="CT101043211046" name="Vale-presente" />
+    <ct assetid="CT101043221046" name="Cartões de mensagens" />
+    <ct assetid="CT101043231046" name="Convites" />
+    <ct assetid="CT101172551046" name="Notas Fiscais" />
+    <ct assetid="CT101043241046" name="Etiquetas" />
+    <ct assetid="CT101172561046" name="Cartas" />
+    <ct assetid="CT101172571046" name="Listas" />
+    <ct assetid="CT101172591046" name="Memorandos" />
+    <ct assetid="CT101172601046" name="Atas" />
+    <ct assetid="CT101043281046" name="Boletins Informativos" />
+    <ct assetid="CT101172331046" name="Plantas" />
+    <ct assetid="CT101423511046" name="Planejadores" />
+    <ct assetid="CT101172741046" name="Ordens de compra" />
+    <ct assetid="CT101043361046" name="Relatórios" />
+    <ct assetid="CT101043371046" name="Currículos" />
+    <ct assetid="CT101172751046" name="Agendas" />
+    <ct assetid="CT101423531046" name="Papel de carta" />
+    <ct assetid="CT101172771046" name="Folhas de ponto" />
+    <ct assetid="CT101485751046" name="Mais categorias" />
+  </word>
+  <excel>
+    <ct assetid="CT101172321046" name="Orçamentos" />
+    <ct assetid="CT101043131046" name="Calendários" />
+    <ct assetid="CT101423481046" name="Relatórios de despesas" />
+    <ct assetid="CT101043201046" name="Formulários" />
+    <ct assetid="CT101172541046" name="Estoques" />
+    <ct assetid="CT101172551046" name="Notas Fiscais" />
+    <ct assetid="CT101172571046" name="Listas" />
+    <ct assetid="CT101423511046" name="Planejadores" />
+    <ct assetid="CT101172751046" name="Agendas" />
+    <ct assetid="CT101423531046" name="Papel de carta" />
+    <ct assetid="CT101172771046" name="Folhas de ponto" />
+    <ct assetid="CT101485751046" name="Mais categorias" />
+  </excel>
+  <powerpoint>
+    <ct assetid="CT101043001046" name="Certificados de premiação" />
+    <ct assetid="CT101043131046" name="Calendários" />
+    <ct assetid="CT101423491046" name="Slides de conteúdo" />
+    <ct assetid="CT101172621046" name="Slides de design" />
+    <ct assetid="CT101172721046" name="Apresentações" />
+    <ct assetid="CT101172751046" name="Agendas" />
+    <ct assetid="CT101485751046" name="Mais categorias" />
+  </powerpoint>
+  <access>
+    <ct assetid="CT101428241046" name="Negócios" />
+    <ct assetid="CT101428511046" name="Pessoal" />
+    <ct assetid="CT101428361046" name="Educação" />
+    <ct assetid="CT101428651046" name="Exemplo" />
+  </access>
+</categories>

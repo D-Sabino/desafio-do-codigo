@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FormRegion xmlns="http://schemas.microsoft.com/office/outlook/12/formregion.xsd">
+	<formRegionName>Fax</formRegionName>
+	<title>Fax</title>
+	<exactMessageClass>true</exactMessageClass>
+	<formRegionType>replaceAll</formRegionType>
+	<showInspectorCompose>false</showInspectorCompose>
+	<showInspectorRead>false</showInspectorRead>
+	<showReadingPane>false</showReadingPane>
+	<hidden>true</hidden>
+	<icons>
+		<default>umoutlookaddin.dll,304</default>
+		<unread>umoutlookaddin.dll,304</unread>
+		<read>umoutlookaddin.dll,305</read>
+	</icons>
+</FormRegion>
