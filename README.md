@@ -13,5 +13,4 @@ A proposta do desafio é, criar uma tela que: <br>
 - [PostgreSQL](https://www.postgresql.org)
 
 <br><br>
-Desenvolvido por [Daniel Sabino](https://github.com/D-Sabino). <br>
-Desafio proposto pela [Paschoalotto](https://www.paschoalotto.com.br).
+Desenvolvido por [Daniel Sabino](https://github.com/D-Sabino), proposto pela [Paschoalotto](https://www.paschoalotto.com.br).
