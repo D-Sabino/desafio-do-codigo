@@ -9,7 +9,7 @@ A proposta do desafio é, criar uma tela que: <br>
 4. Criar a exportação de um relatório.
 
 ## Tecnologias utilizadas
-- [Visual Basic 6.0](https://www.microsoft.com/en-US/download/details.aspx?id=10019)
+- Visual Basic 6.0
 - [PostgreSQL](https://www.postgresql.org)
 
 <br><br>
