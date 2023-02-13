@@ -251,16 +251,13 @@ End Sub
 Private Sub geraRelatorio()
 On Error GoTo TrataErro
     
+    Dim f As New frmRelatorio
     Dim objConsulta As ADODB.Recordset
     Set objConsulta = New ADODB.Recordset
     Dim strSql As String
     
     Dim strNomeRelatorio As String
     strNomeRelatorio = "Relatório de Clientes"
-    
-    Dim crpe As New CRAXDRT.Application
-    Dim report As CRAXDRT.report
-    
     
     'Informações do cliente
     '-------------------------------------
@@ -308,51 +305,17 @@ On Error GoTo TrataErro
     
     Close #1
     
-'    Call PadronizarCrystalReport(Me, "rptCliente")
-
-    'Caminho fixo, adaptavel
-'    rptCliente.ReportFileName = "C:\Users\felil\Desktop\Projetos\desafio-do-codigo\Report\REPORT01.rpt"
-'    rptMovimentacao.WindowState = crptMaximized
-'    rptMovimentacao.Action = 1
     
-    
-'    CrystalReportViewer1.Refresh
-
-    
-    Set report = crpe.OpenReport("C:\Users\felil\Desktop\Projetos\desafio-do-codigo\Report\REPORT01.rpt")
-'    report.WindowState = crptMaximized
-'    report.WindowShowCloseBtn = True
-'    report.WindowShowExportBtn = True
-'    report.WindowShowGroupTree = False
-'    report.WindowShowNavigationCtls = True
-'    report.WindowShowPrintBtn = True
-'    report.WindowShowPrintSetupBtn = True
-'    report.WindowShowRefreshBtn = True
-'    report.WindowShowSearchBtn = True
-'    report.WindowShowZoomCtl = True
-'    report.WindowShowProgressCtls = True
-    
-
-
-
-
-
-
-
+    f.Show
     
     Screen.MousePointer = vbNormal
 
-
-    
     Exit Sub
     Resume
 
-'TRATAMENTO DE ERRO
-'----------------------------------------------------------------------------------------
 TrataErro:
     MsgBox "Erro na montagem/exibição do relatório. geraRelatorio, frmPrincipal"
     Close #1
-'----------------------------------------------------------------------------------------
 End Sub
 
 Private Sub CriarSchema()
