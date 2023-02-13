@@ -1,9 +1,0 @@
-WEB
-1
-http://moneycentral.msn.com/investor/external/excel/quotes.asp?SYMBOL=["QUOTE0","Introduza os símbolos referentes às ações da Bolsa do MS Investor separados por vírgulas."]
-
-Selection=EntirePage
-Formatting=All
-PreFormattedTextToColumns=True
-ConsecutiveDelimitersAsOne=True
-SingleBlockTextImport=False
