@@ -61,6 +61,10 @@ Private Const mbytColTelefone = 6
 Private Const mbytColEmail = 7
 '----------------------------------------
 
+Private Sub cmdExibeRelatorio_Click()
+    geraRelatorio
+End Sub
+
 Private Sub cmdImportXLSX_Click()
     importacaoExcel
     exibirDados
@@ -109,7 +113,7 @@ Private Sub exibirDados()
     For i = 0 To objConsulta.Fields.Count - 1
         frmPrincipal.fgClientes.Col = i
         frmPrincipal.fgClientes.Text = UCase(Left(objConsulta.Fields(i).Name, 1)) & Mid(objConsulta.Fields(i).Name, 2)
-        frmPrincipal.fgClientes.ColWidth(i) = objConsulta.Fields(i).DefinedSize * 10
+        frmPrincipal.fgClientes.ColWidth(i) = objConsulta.Fields(i).DefinedSize * 20
     Next
     
     ' Preenche o fgClientes com as linhas da consulta
@@ -254,6 +258,10 @@ On Error GoTo TrataErro
     Dim strNomeRelatorio As String
     strNomeRelatorio = "Relatório de Clientes"
     
+    Dim crpe As New CRAXDRT.Application
+    Dim report As CRAXDRT.report
+    
+    
     'Informações do cliente
     '-------------------------------------
     Dim strCodigo As String
@@ -269,14 +277,13 @@ On Error GoTo TrataErro
     strSql = "SELECT * FROM CAD_CLIENTES ORDER BY NOME ASC"
     objConsulta.Open strSql, gobjBanco
     
-    If objConsulta.RecordCount = 0 Then
+    If objConsulta.EOF Then
         MsgBox "Não há informações no banco de dados para exibir, realize a importação."
         objConsulta.Close
         
         Exit Sub
     End If
     
-    objConsulta.MoveLast
     objConsulta.MoveFirst
     
     'Carregando (mouse)
@@ -301,71 +308,41 @@ On Error GoTo TrataErro
     
     Close #1
     
+'    Call PadronizarCrystalReport(Me, "rptCliente")
+
+    'Caminho fixo, adaptavel
+'    rptCliente.ReportFileName = "C:\Users\felil\Desktop\Projetos\desafio-do-codigo\Report\REPORT01.rpt"
+'    rptMovimentacao.WindowState = crptMaximized
+'    rptMovimentacao.Action = 1
     
     
+'    CrystalReportViewer1.Refresh
+
     
+    Set report = crpe.OpenReport("C:\Users\felil\Desktop\Projetos\desafio-do-codigo\Report\REPORT01.rpt")
+'    report.WindowState = crptMaximized
+'    report.WindowShowCloseBtn = True
+'    report.WindowShowExportBtn = True
+'    report.WindowShowGroupTree = False
+'    report.WindowShowNavigationCtls = True
+'    report.WindowShowPrintBtn = True
+'    report.WindowShowPrintSetupBtn = True
+'    report.WindowShowRefreshBtn = True
+'    report.WindowShowSearchBtn = True
+'    report.WindowShowZoomCtl = True
+'    report.WindowShowProgressCtls = True
     
-    
-    
-    If CD_MOVIMENTACAO.Text = 1 Then
-        strCodigoRelatorio = "SCRR0001"
-        
-        SetarMouseAmpulheta "Processando relatório ..."
-        CriarSchemaPagamento
-            
-        Open BuscarCaminhoTemp & "SCRR0001.txt" For Output As #1
-        Print #1, "NR_DOCUMENTO;NM_RAZAO_SOCIAL;VL_MOVIMENTACAO;VL_MOVIMENTACAO_EXTENSO;DT_MOVIMENTACAO;DS_MOVIMENTACAO;DS_OBSERVACAO;DS_CPFCNPJ;DS_TIPODOC;COD_DOC"
-        Print #1, strNumeroDocumento & " ; " & _
-                  strNomeClienteFornecedor & " ; " & _
-                  strValorMovimentacao & " ; " & _
-                  strValorPorExtenso & " ; " & _
-                  intTipoData & " ; " & _
-                  strTipoMovimentacao & " ; " & _
-                  strObservacao & " ; " & _
-                  strCPF_CNPJ & " ; " & _
-                  strTipoDoc & " ; " & _
-                  strCodigoDocumento
 
 
-        Close #1
-        
-        Call PadronizarCrystalReport(Me, "rptMovimentacao")
 
-        rptMovimentacao.ReportFileName = gstrCaminhoRelatorios & "SCRR0001.rpt"
-        rptMovimentacao.WindowState = crptMaximized
-        rptMovimentacao.Action = 1
-        
-    Else
-        strCodigoRelatorio = "SCRR0002"
-        
-        SetarMouseAmpulheta "Processando relatório ..."
-        CriarSchemaRecebimento
-            
-        Open BuscarCaminhoTemp & "SCRR0002.txt" For Output As #1
-        Print #1, "NR_DOCUMENTO;NM_RAZAO_SOCIAL;VL_MOVIMENTACAO;VL_MOVIMENTACAO_EXTENSO;DT_MOVIMENTACAO;DS_MOVIMENTACAO;DS_OBSERVACAO;DS_CPFCNPJ;DS_TIPODOC;COD_DOC"
-        Print #1, strNumeroDocumento & " ; " & _
-                  strNomeClienteFornecedor & " ; " & _
-                  strValorMovimentacao & " ; " & _
-                  strValorPorExtenso & " ; " & _
-                  intTipoData & " ; " & _
-                  strTipoMovimentacao & " ; " & _
-                  strObservacao & " ; " & _
-                  strCPF_CNPJ & " ; " & _
-                  strTipoDoc & " ; " & _
-                  strCodigoDocumento
 
-        Close #1
-        
-        Call PadronizarCrystalReport(Me, "rptMovimentacao")
 
-        rptMovimentacao.ReportFileName = gstrCaminhoRelatorios & "SCRR0002.rpt"
-        rptMovimentacao.WindowState = crptMaximized
-        rptMovimentacao.Action = 1
-    End If
+
+
     
-    gfrmPrincipal.staEstado.Panels.Item(1).Text = ""
-    gfrmPrincipal.staEstado.Refresh
     Screen.MousePointer = vbNormal
+
+
     
     Exit Sub
     Resume
@@ -373,7 +350,7 @@ On Error GoTo TrataErro
 'TRATAMENTO DE ERRO
 '----------------------------------------------------------------------------------------
 TrataErro:
-    EmitirMsgErroInesperado "frmCAD_Movimentacoes_Financeiras.CmdRelatorio_MovimentacaoRegistrada_Click", ""
+    MsgBox "Erro na montagem/exibição do relatório. geraRelatorio, frmPrincipal"
     Close #1
 '----------------------------------------------------------------------------------------
 End Sub
@@ -403,9 +380,6 @@ TrataErro:
     Close #1
     
 End Sub
-
-
-
 
 Private Sub Form_Unload(Cancel As Integer)
     gobjBanco.Close
