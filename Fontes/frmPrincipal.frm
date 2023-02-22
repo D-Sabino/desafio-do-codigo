@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
 Begin VB.Form frmPrincipal 
-   BorderStyle     =   3  'Fixed Dialog
+   BorderStyle     =   1  'Fixed Single
    Caption         =   "Principal"
    ClientHeight    =   6240
    ClientLeft      =   45
@@ -11,8 +11,8 @@ Begin VB.Form frmPrincipal
    MaxButton       =   0   'False
    MinButton       =   0   'False
    ScaleHeight     =   6240
+   ScaleMode       =   0  'User
    ScaleWidth      =   8760
-   ShowInTaskbar   =   0   'False
    StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton cmdExibeRelatorio 
       Caption         =   "Gerar relatório"
@@ -74,7 +74,7 @@ Private Sub Form_Load()
     On Error GoTo TrataErro
     
     'Inicializando a conexão com o servidor.
-    Dim objConsulta As ADODB.Recordset
+'    Dim objConsulta As ADODB.Recordset
     gobjBanco.Open "Driver={PostgreSQL ODBC Driver(ANSI)};Server=Localhost;Port=5432;Database=DB_DesafioDoCodigo;Uid=postgres;Pwd=1234;"
     
 '    If gobjBanco.State = adStateOpen Then
@@ -89,6 +89,11 @@ Private Sub Form_Load()
 TrataErro:
     MsgBox "Erro inesperado ao realizar conexão com o servidor. Form_Load, frmPrincipal"
     
+End Sub
+
+Private Sub Form_Unload(Cancel As Integer)
+    gobjBanco.Close
+    Set gobjBanco = Nothing
 End Sub
 
 Private Sub exibirDados()
@@ -113,7 +118,7 @@ Private Sub exibirDados()
     For i = 0 To objConsulta.Fields.Count - 1
         frmPrincipal.fgClientes.Col = i
         frmPrincipal.fgClientes.Text = UCase(Left(objConsulta.Fields(i).Name, 1)) & Mid(objConsulta.Fields(i).Name, 2)
-        frmPrincipal.fgClientes.ColWidth(i) = objConsulta.Fields(i).DefinedSize * 20
+        frmPrincipal.fgClientes.ColWidth(i) = objConsulta.Fields(i).DefinedSize * 50
     Next
     
     ' Preenche o fgClientes com as linhas da consulta
@@ -342,9 +347,4 @@ TrataErro:
     MsgBox "Erro na criação do SCHEMA.INI. CriarSchema, frmPrincipal"
     Close #1
     
-End Sub
-
-Private Sub Form_Unload(Cancel As Integer)
-    gobjBanco.Close
-    Set gobjBanco = Nothing
 End Sub
